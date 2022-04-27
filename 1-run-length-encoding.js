@@ -13,7 +13,7 @@
     const times = caracteresTimes[key]
     const numberOfPairs = Math.floor(times / 9);
 
-    if (times < 10) result.push(`${times}${key}`);
+    if (times < 10) return result.push(`${times}${key}`);
 
     for (let i = 0; i < numberOfPairs; i++) {
       result.push(`${9}${key}`);
